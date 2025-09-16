@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Doceria Delícias da Vida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Doceria Delícias da Vida</h1>
+        <p>As melhores sobremesas da cidade, feitas com amor ❤️</p>
+    </header>
+
+    <main class="conteudo-principal">
+        <div class="coluna">
+            <h2>Brigadeiros Gourmet</h2>
+            <img src="img/bg.png" alt="Brigadeiros Gourmet">
+            <p>Experimente nossos brigadeiros com cobertura de granulado belga e recheios surpreendentes!</p>
+        </div>
+
+        <div class="coluna">
+            <h2>Cheesecake de Frutas</h2>
+            <img src="img/Cheesecake-de-Goiaba-e-Creme-com-Calda-de-Frutas-Vermelhas.png" alt="Cheesecake de Frutas">
+            <p>Feito com frutas frescas da estação e base crocante de biscoito.</p>
+        </div>
+
+        <div class="coluna">
+            <h2>Bolo de Pote</h2>
+            <img src="img/bolopote.png" alt="Bolo de Pote">
+            <p>Bolos de pote variados com camadas generosas de recheio e cobertura.</p>
+        </div>
+    </main>
+
+    <section class="dropdown-section">
+        <button onclick="toggleDropdown()">Ver Cardápio Completo</button>
+
+        <div id="dropdown-cardapio" class="dropdown-conteudo">
+            <div class="coluna">
+                <h2>Torta de Limão</h2>
+                <img src="img/limao.png" alt="Torta de Limão">
+                <p>Base crocante com recheio cremoso de limão e cobertura de merengue.</p>
+            </div>
+
+            <div class="coluna">
+                <h2>Brownie com Nozes</h2>
+                <img src="img/brownie.png" alt="Brownie">
+                <p>Brownie denso e úmido com pedaços de nozes caramelizadas.</p>
+            </div>
+
+            <div class="coluna">
+                <h2>Cookies Artesanais</h2>
+                <img src="img/Cookies Artesanais.png" alt="Cookies">
+                <p>Cookies crocantes por fora e macios por dentro, nos sabores chocolate, baunilha e mais.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="localizacao">
+        <h2>Nos Encontre</h2>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d228.49288551584561!2d-46.638776099241085!3d-23.608415046458425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1757954881403!5m2!1spt-BR!2sbr"
+            width="60%" height="200" allowfullscreen="" loading="lazy" style="display:block; margin: 0 auto;">
+        </iframe>
+        <p>Estamos localizados no coração da cidade! Venha nos visitar e experimentar nossas delícias ao vivo.</p>
+    </section>
+
+    <footer>
+        <div class="footer-info">
+            <h3>Contato</h3>
+            <address>
+                Rua das Rosas, 123 - Centro<br>
+                Doceville, SP - Brasil<br>
+                <a href="mailto:contato@doceriadelicias.com">contato@doceriadelicias.com</a>
+            </address>
+        </div>
+
+        <div class="footer-social dropdown-contato">
+            <h3>Fale conosco</h3>
+            <div class="conteudo-dropdown">
+                <p><a href="https://wa.me/5511999999999" target="_blank">WhatsApp: (11) 99999-9999</a></p>
+                <p><a href="mailto:contato@doceriadelicias.com">Email: contato@doceriadelicias.com</a></p>
+                <p><a href="tel:+5511999999999">Telefone: (11) 99999-9999</a></p>
+                <p><a href="https://instagram.com/suadoceria" target="_blank">Instagram: @suadoceria</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleDropdown() {
+            const dropdown = document.getElementById("dropdown-cardapio");
+            dropdown.classList.toggle("ativo");
+        }
+    </script>
+</body>
+</html>
